@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Sobre Nosotros - Cafeter&iacute;a Veintiuno</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+    <style>
+      article {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      article img {
+        max-width: 40%;
+        margin: 0 20px;
+        border-radius: 10px;
+      }
+
+      article:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cafeter&iacute;a Veintiuno</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="selected">
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li><a href="menu.html">Men&uacute; </a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <header>
+        <h2>"El buen caf&eacute; despierta y el de especialidad inspira"</h2>
+      </header>
+      <p>
+        Bienvenidos a Veintiuno, donde la pasion por el caf&eacute; y la buena
+        comida se unen para ofrecerte una experiencia &uacute;nica.
+        &#161;Descubre nuestro men&uacute; y dejate inspirar&#33;
+      </p>
+      <img src="images/coffee.png" alt="Imagen destacada de Veintiuno">
+    </section>
+
+    <section id="about-us">
+      <header>
+        <h2>Sobre Nosotros</h2>
+      </header>
+
+      <article>
+        <header>
+          <h3>Nuestra Historia</h3>
+        </header>
+        <p>
+          Cafeter&iacute;a Veintiuno naci&oacute; en el coraz&oacute;n de
+          Zaragoza como un sue&ntilde;o compartido por dos amigos apasionados
+          por el caf&eacute; y la reposter&iacute;a. Inspirados por sus viajes
+          alrededor del mundo, quisieron traer un pedacito de cada cultura y
+          combinarlo con ingredientes locales para ofrecer una experiencia
+          &uacute;nica. Desde 2021, hemos servido caf&eacute; de especialidad,
+          alimentos frescos y un ambiente acogedor para nuestra comunidad.
+        </p>
+        <img
+          src="images/historia.jpg"
+          alt="Historia de Cafeter&iacute;a Veintiuno"
+        />
+      </article>
+
+      <article>
+        <h3>Misi&oacute;n</h3>
+        <p>
+          Inspirar y conectar a las personas mediante la pasi&oacute;n por el
+          caf&eacute; de especialidad, la buena comida y un ambiente que nutra
+          la creatividad y el bienestar.
+        </p>
+        <img
+          src="images/mision.jpg"
+          alt="Misi&oacute;n de la Cafeter&iacute;a"
+        />
+      </article>
+
+      <article>
+        <header>
+          <h3>Visi&oacute;n</h3>
+        </header>
+        <p>
+          Convertirnos en un referente en el mundo del caf&eacute; y la
+          gastronom&iacute;a en Zaragoza, siendo reconocidos por nuestra
+          calidad, sostenibilidad y hospitalidad.
+        </p>
+        <img
+          src="images/vision.jpg"
+          alt="Visi&oacute;n de la Cafeter&iacute;a"
+        />
+      </article>
+
+      <article>
+        <header>
+          <h3>Valores</h3>
+        </header>
+        <ul>
+          <li>
+            <strong>Pasi&oacute;n:</strong> Vivimos para ofrecer lo mejor en
+            cada taza y plato.
+          </li>
+          <li>
+            <strong>Sostenibilidad:</strong> Apoyamos a productores locales y
+            pr&aacute;cticas ecol&oacute;gicas.
+          </li>
+          <li>
+            <strong>Creatividad:</strong> Fusionamos ideas &uacute;nicas en cada
+            receta.
+          </li>
+          <li>
+            <strong>Hospitalidad:</strong> Hacemos que cada cliente se sienta
+            como en casa.
+          </li>
+        </ul>
+        <img src="images/valores.jpg" alt="Valores de la Cafeter&iacute;a" />
+      </article>
+    </section>
+
+    <footer>
+      <section>
+        <h3 style="color: white;"><u>Nuestras Ubicaciones</u></h3>
+        <p>P&ordm; Fernando el Cat&oacute;lico 17, Zaragoza 50006</p>
+        <p>C/Jose Luis Albareda 21, Zaragoza 50004</p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Contacto</u></h3>
+        <p>
+          Instagram
+          <a href="https://instagram.com/veintiunocoffee" target="_blank"
+            >@veintiunocoffee</a
+          >
+        </p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Derechos Reservados</u></h3>
+        <p>&copy; 2024 Veintiuno. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+
+    <script>
+      // Función para resaltar dinámicamente los artículos seleccionados
+      document.addEventListener("DOMContentLoaded", function () {
+        const articles = document.querySelectorAll("article");
+
+        articles.forEach((article) => {
+          article.addEventListener("click", () => {
+            // Elimina la clase 'selected' de todos los artículos
+            articles.forEach((a) => a.classList.remove("selected"));
+
+            // Agrega la clase 'selected' al artículo clicado
+            article.classList.add("selected");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

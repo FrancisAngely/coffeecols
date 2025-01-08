@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonios de Clientes - Cafetería Veintiuno</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1>Cafeter&iacute;a Veintiuno</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="menu.html">Men&uacute;</a></li>
+          <li class="selected"><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <header>
+        <h2>"El buen caf&eacute; despierta y el de especialidad inspira"</h2>
+      </header>
+      <p>
+        Bienvenidos a Veintiuno, donde la pasion por el caf&eacute; y la buena
+        comida se unen para ofrecerte una experiencia &uacute;nica.
+        &#161;Descubre nuestro men&uacute; y dejate inspirar&#33;
+      </p>
+      <img src="images/coffee.png" alt="Imagen destacada de Veintiuno">
+    </section>
+
+    <section id="testimonios">
+      <header>
+        <h2>Testimonios de Clientes</h2>
+      </header>
+
+      <article class="reseña">
+        <h4>Juan Pérez</h4>
+        <p>
+          "El mejor café que he probado en Zaragoza. El ambiente es acogedor y
+          el personal es muy amable."
+        </p>
+        <div class="valoracion">
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+      </article>
+
+      <article class="reseña">
+        <h4>María López</h4>
+        <p>
+          "Me encanta la variedad de postres que ofrecen. Siempre salgo feliz de
+          la cafetería."
+        </p>
+        <div class="valoracion">
+          <span>⭐⭐⭐⭐</span>
+        </div>
+      </article>
+
+      <article class="reseña">
+        <h4>Carlos García</h4>
+        <p>
+          "Un lugar perfecto para trabajar y disfrutar de un buen café.
+          ¡Recomendado!"
+        </p>
+        <div class="valoracion">
+          <span>⭐⭐⭐⭐⭐</span>
+        </div>
+      </article>
+
+      <header>
+        <h3>Deja tu Comentario</h3>
+      </header>
+      <form id="comentario-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" required></textarea>
+
+        <label for="valoracion">Valoración:</label>
+        <select id="valoracion" name="valoracion" required>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="1">⭐</option>
+        </select>
+
+        <button type="submit">Enviar Comentario</button>
+      </form>
+    </section>
+
+    <footer>
+      <section>
+        <h3 style="color: white;"><u>Nuestras Ubicaciones</u></h3>
+        <p>P&ordm; Fernando el Cat&oacute;lico 17, Zaragoza 50006</p>
+        <p>C/Jose Luis Albareda 21, Zaragoza 50004</p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Contacto</u></h3>
+        <p>
+          Instagram
+          <a href="https://instagram.com/veintiunocoffee" target="_blank"
+            >@veintiunocoffee</a
+          >
+        </p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Derechos Reservados</u></h3>
+        <p>&copy; 2024 Veintiuno. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+  </body>
+</html>

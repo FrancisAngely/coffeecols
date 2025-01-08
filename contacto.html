@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Contacto - Cafeter&iacute;a Veintiuno</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+    <style>
+      #contacto {
+        text-align: center;
+      }
+
+      #contacto iframe {
+        margin: 20px auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cafeter&iacute;a Veintiuno</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#intro">Sobre Nosotros</a></li>
+        <li><a href="menu.html">Men&uacute;</a></li>
+        <li><a href="testimonios.html">Testimonios</a></li>
+        <li class="selected"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <header>
+        <h2>"El buen caf&eacute; despierta y el de especialidad inspira"</h2>
+      </header>
+      <p>
+        Bienvenidos a Veintiuno, donde la pasion por el caf&eacute; y la buena
+        comida se unen para ofrecerte una experiencia &uacute;nica.
+        &#161;Descubre nuestro men&uacute; y dejate inspirar&#33;
+      </p>
+      <img src="images/coffee.png" alt="Imagen destacada de Veintiuno">
+    </section>
+
+    <section id="contacto">
+      <header>
+        <h2>Contacto</h2>
+      </header>
+      <p>
+        Si tienes preguntas, sugerencias o deseas comunicarte con nosotros,
+        completa el formulario a continuaci&oacute;n:
+      </p>
+      <form action="procesar_contacto.php" method="post" id="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electr&oacute;nico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h3>Nuestra Ubicaci&oacute;n</h3>
+      <p>P&ordm; Fernando el Cat&oacute;lico 17, Zaragoza 50006</p>
+      <p>C/Jose Luis Albareda 21, Zaragoza 50004</p>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d-0.127758684681999!3d51.50735017963657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2c1c1c1c1c%3A0x1c1c1c1c1c1c1c1c!2sP%20Fernando%20el%20Cat%C3%B3lico%2017%2C%20Zaragoza%2050006!5e0!3m2!1ses!2ses!4v1616161616161!5m2!1ses!2ses"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <footer>
+      <section>
+        <h3 style="color: white;"><u>Nuestras Ubicaciones</u></h3>
+        <p>P&ordm; Fernando el Cat&oacute;lico 17, Zaragoza 50006</p>
+        <p>C/Jose Luis Albareda 21, Zaragoza 50004</p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Contacto</u></h3>
+        <p>
+          Instagram
+          <a href="https://instagram.com/veintiunocoffee" target="_blank"
+            >@veintiunocoffee</a
+          >
+        </p>
+      </section>
+      <section>
+        <h3 style="color: white;"><u>Derechos Reservados</u></h3>
+        <p>&copy; 2024 Veintiuno. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 960px;
+  font: 14px/20px "Garamond";
+  background: #000000 url("images/textura1.jpg") repeat;
+}
+
+/* Navegación */
+nav {
+  top: 146px;
+  z-index: 1000;
+  position: absolute;
+  width: 1039px;
+  background: url(images/navbg.png);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* padding: 10px 0; */
+  width: 1048px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: block;
+  margin-right: 20px;
+  width: 158px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  color: #f2ede7;
+}
+
+
+nav ul li a:hover {
+	color: #d6a965;
+	}
+			
+nav ul li.selected a {
+	color: #d6a965;
+	}
+
+/* Sección de Introducción */
+#intro {
+	position: relative;
+    margin-top: 135px;
+	padding: 50px;
+	background: #f8f8f8 url("images/introbkg1.jpg") repeat-x;	
+	/* background size */
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-khtml-background-size: 100%;
+
+	
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  width: 1040px;
+}
+
+#intro h2 {
+  margin-bottom: 10px;
+  font: 32px / 38px "Garamond";
+}
+
+#intro p {
+  font-size: 18px;
+}
+
+#intro img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 477px;
+	height: 100%;
+	
+	/* curved border radius */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+
+/* Sección de Menú */
+#menu {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 1040px;
+}
+
+
+#menu header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c4a0b;
+}
+
+#menu h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #3e3e3e;
+  border-bottom: 2px solid #d6a965;
+  padding-bottom: 5px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu ul li {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: #f9f4ed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#menu ul li strong {
+  display: block;
+  font-size: 16px;
+  color: #8c4a0b;
+}
+
+#menu ul li span {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: #271408;
+  color: #f2ede7;
+  border-radius: 10px;
+  width: 1036px;
+}
+
+footer a {
+  color: #d6a965;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+h1 {
+  margin-top: 3%;
+}
+
+/* Sección de contacto */
+#contacto {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #3e3e3e;
+  width: 1040px;
+}
+
+#contacto header h2 h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c4a0b;
+  font-family: Arial, sans-serif; /* Cambiar la fuente si es necesario */
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #8c4a0b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #d6a965;
+}
+
+/*Sobre nosotros*/
+
+#about-us {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 1040px;
+}
+
+#about-us header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c4a0b;
+}
+
+#about-us article {
+  text-align: justify;
+  margin: 24px;
+}
+
+#about-us article header h3 {
+  color: #3e3e3e;
+  margin: 62px;
+}
+
+#about-us article p {
+  font-size: 16px;
+  color: #595959;
+  line-height: 1.5;
+  margin: 51px;
+  text-align: justify;
+}
+
+#about-us article ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about-us article ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#about-us article img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los artículos */
+article {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: background 0.3s, border 0.3s;
+}
+
+/* Estilo para la opción seleccionada */
+article.selected {
+  background: #fdf4e3; /* Fondo resaltado */
+  border: 2px solid #d6a965; /* Borde resaltado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+article.selected header h3 {
+  color: #8c4a0b; /* Cambiar color del encabezado */
+}
+
+/* Estilos para la sección de Testimonios */
+#testimonios {
+  margin-top: 50px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 1040px;
+}
+
+#testimonios header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c4a0b;
+}
+
+.reseña {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f4ed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reseña:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reseña h3 {
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+
+.reseña p {
+  font-size: 16px;
+  color: #595959;
+  line-height: 1.5;
+}
+
+.valoracion {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #d6a965;
+}
+
+#comentario-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #8c4a0b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #d6a965;
+}
